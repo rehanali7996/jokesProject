@@ -36,8 +36,8 @@ function MyVerticallyCenteredModal(props) {
         <Button variant="outline-dark" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
-    <div className="text-center text-white p-3" style={{border:"1px solid #FFCC00;border-radius:10px"}}>
-            <p style={{fontFamily:"Spartan",fontSize:"12px"}}>Dev with <FaHandHoldingHeart/> Rehan</p>
+    <div className="text-center text-white p-3" style={{border:"1px solid #FFCC00;border-radius:10px",margin:"20px"}}>
+            <p style={{fontFamily:"Spartan",fontSize:"18px"}}>Dev with <FaHandHoldingHeart/> Rehan</p>
     </div>
     </>
   );
