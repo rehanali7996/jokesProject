@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import axios from 'axios';
 import "./styles.css";
+import { FaHandHoldingHeart } from "react-icons/fa";
 
 function MyVerticallyCenteredModal(props) {
   const [advice, setAdvice]= useState('');
@@ -19,6 +20,7 @@ function MyVerticallyCenteredModal(props) {
       })
   
   return (
+    <>
     <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
       <Modal.Header closeButton style={{backgroundColor:"whitesmoke"}}>
         <Modal.Title id="contained-modal-title-vcenter" className="special_modal">
@@ -34,6 +36,10 @@ function MyVerticallyCenteredModal(props) {
         <Button variant="outline-dark" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
+    <div className="text-center text-white p-3" style={{border:"1px solid #FFCC00;border-radius:10px"}}>
+            <p style={{fontFamily:"Spartan",fontSize:"12px"}}>Dev with <FaHandHoldingHeart/> Rehan</p>
+    </div>
+    </>
   );
 }
 
